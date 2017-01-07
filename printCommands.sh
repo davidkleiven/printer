@@ -1,12 +1,7 @@
-#!/bin/bash
-# Connects to the printer and prints the files
 
-IP=10.42.0.1
-PRINTER="HP-LaserJet-P2015-Series"
 USER="guest"
 TEMP_DESTINATION="~/Documents/printout"
 
-source "printerParameters.sh"
 FILE=""
 # Parse commandline arguments
 while [[ $# -gt 1 ]]
@@ -24,7 +19,6 @@ do
   shift
 done
 
-echo "${TEMP_DESTINATION}"
 if [ "$FILE" != "" ]
 then
   # Create destination folder if it does not exist

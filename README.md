@@ -2,8 +2,19 @@
 Script for printing over SSH.
 
 # Setup
-Modify the *IP* and the *PRINTER* variable in the print script to the correct
-values.
+Build the printing script by running
+```bash
+bash build.sh <IP-address> <Printer name>
+```
+Run
+```bash
+make test
+```
+to check if it works, and then
+```bash
+make install
+```
+to install the script.
 
 # Create passwordless ssh connection
 Run
