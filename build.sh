@@ -1,7 +1,7 @@
 # Usage: bash build.sh <IP address> <Printer>
 
 EXEC="print"
-rm ${EXEC}
+rm -f ${EXEC}
 IP="$1"
 PRINTER="$2"
 
